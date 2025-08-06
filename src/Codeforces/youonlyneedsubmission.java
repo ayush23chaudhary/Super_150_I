@@ -10,6 +10,7 @@ public class youonlyneedsubmission {
             int n= sc.nextInt();
             int[] arr= new int[n];
             int sum=0,z=0;
+//            sTRDSADGAIG
             for (int i=0;i<n;i++){
                 arr[i]=sc.nextInt();
                 sum+=arr[i];
