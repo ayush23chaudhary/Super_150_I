@@ -1,0 +1,33 @@
+package lec37_binary_tree;
+
+import java.util.Scanner;
+
+public class BinaryTree {
+    class Node{
+        int val;
+        Node left;
+        Node right;
+
+    }
+    private Node root;
+    Scanner sc= new Scanner(System.in);
+    public BinaryTree(){
+        root=CreateTree();
+    }
+    private Node CreateTree(){
+        int item=sc.nextInt();
+        Node nn= new Node();
+        nn.val=item;
+        boolean hlc= sc.nextBoolean();
+        if (hlc){
+            nn.left= CreateTree();
+        }
+        boolean hrc= sc.nextBoolean();
+        if (hrc){
+            nn.right= CreateTree();
+
+        }
+        return nn;
+    }
+
+}
