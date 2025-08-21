@@ -1,4 +1,4 @@
-package JP_Morgan;
+package lec42_priority_queue;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
@@ -9,8 +9,8 @@ public class Meeting_rooms_II {
         Meeting_room(intervals);
     }
     public static void Meeting_room(int[][] intervals){
-        Arrays.sort(intervals,(a,b)->a[0]-b[0]);
-        PriorityQueue<int[]> pq= new PriorityQueue<>(((a,b)->a[1]-b[1]));
+        Arrays.sort(intervals,(a, b)->a[0]-b[0]);
+        PriorityQueue<int[]> pq= new PriorityQueue<>(((a, b)->a[1]-b[1]));
         pq.add(intervals[0]);
         int  room=1;
         for (int i=1;i< intervals.length;i++){
